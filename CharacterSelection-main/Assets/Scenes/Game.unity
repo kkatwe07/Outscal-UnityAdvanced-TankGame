@@ -152,8 +152,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff9080d68239904298acf3c20c6a893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 30
-  rotateSpeed: 20
+  tankList:
+  - movementSpeed: 30
+    rotationSpeed: 60
+    tankType: 0
+    color: {fileID: 2100000, guid: c39933e60e73205419d1f79a2af1fdac, type: 2}
+  - movementSpeed: 10
+    rotationSpeed: 120
+    tankType: 1
+    color: {fileID: 2100000, guid: ff21ff0ea9b18924bb1fdfbb0e58f5cb, type: 2}
+  - movementSpeed: 75
+    rotationSpeed: 240
+    tankType: 2
+    color: {fileID: 2100000, guid: 463052f3f7389124f9e7b34b0b931d0d, type: 2}
   tankView: {fileID: 5015769216279856319, guid: 5abc0a5d106ac5741931280345b8a436,
     type: 3}
 --- !u!4 &596616744
@@ -247,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313370473}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 4, z: -6}
+  m_LocalPosition: {x: 0, y: 4, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

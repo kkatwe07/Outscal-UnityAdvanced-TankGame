@@ -6,6 +6,7 @@ public class TankView : MonoBehaviour
 {
 
     public Rigidbody rb;
+    public MeshRenderer[] childs;
     private TankController tankController;
 
     private float movement;
@@ -16,7 +17,7 @@ public class TankView : MonoBehaviour
     {
         GameObject cam = GameObject.Find("Main Camera");
         cam.transform.SetParent(transform);
-        cam.transform.position = new Vector3(0f, 4f, -6f);
+        cam.transform.position = new Vector3(0f, 3f, -4f);
     }
 
     // Update is called once per frame
@@ -44,5 +45,13 @@ public class TankView : MonoBehaviour
     public Rigidbody GetRigidbody()
     {
         return rb;
+    }
+
+    public void ChangeColor(Material color)
+    {
+        for(int i = 0; i < childs.Length; i++)
+        {
+            childs[i].material = color;
+        }
     }
 }
